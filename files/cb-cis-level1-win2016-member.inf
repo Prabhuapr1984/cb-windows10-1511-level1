@@ -1,0 +1,72 @@
+[Unicode]
+Unicode=yes
+
+[Version]
+signature="$CHICAGO$"
+Revision=1
+
+[System Log]
+MaximumLogSize = 32768
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[Security Log]
+MaximumLogSize = 196608
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[Application Log]
+MaximumLogSize = 32768
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[System Access]
+PasswordHistorySize = 24
+MaximumPasswordAge = 60
+MinimumPasswordAge = 1
+PasswordComplexity = 1
+ClearTextPassword = 0
+LockoutBadCount = 5
+ResetLockoutCount = 15
+
+[Privilege Rights]
+SeTrustedCredManAccessPrivilege = 
+SeNetworkLogonRight = *S-1-5-32-544,*S-1-5-11
+SeTcbPrivilege = 
+SeIncreaseQuotaPrivilege = *S-1-5-19,*S-1-5-20,*S-1-5-32-544
+SeInteractiveLogonRight = *S-1-5-32-544
+SeRemoteInteractiveLogonRight = *S-1-5-32-544,*S-1-5-32-555
+SeBackupPrivilege = *S-1-5-32-544
+SeSystemtimePrivilege = *S-1-5-32-544,*S-1-5-19
+SeTimeZonePrivilege = *S-1-5-32-544,*S-1-5-19
+SeCreatePagefilePrivilege = *S-1-5-32-544
+SeCreateTokenPrivilege = 
+SeCreateGlobalPrivilege = *S-1-5-32-544,*S-1-5-19,*S-1-5-20,*S-1-5-6
+SeCreatePermanentPrivilege = 
+SeCreateSymbolicLinkPrivilege = *S-1-5-32-544
+SeDenyNetworkLogonRight = *S-1-5-32-546,*S-1-5-114
+SeDenyBatchLogonRight = *S-1-5-32-546
+SeDenyServiceLogonRight = *S-1-5-32-546
+SeDenyInteractiveLogonRight = *S-1-5-32-546
+SeDenyRemoteInteractiveLogonRight = *S-1-5-32-546,*S-1-5-113
+SeEnableDelegationPrivilege = 
+SeRemoteShutdownPrivilege = *S-1-5-32-544
+SeAuditPrivilege = *S-1-5-20,*S-1-5-19
+SeImpersonatePrivilege = *S-1-5-32-544,*S-1-5-19,*S-1-5-20,*S-1-5-6,*S-1-5-17
+SeIncreaseBasePriorityPrivilege = *S-1-5-32-544
+SeLoadDriverPrivilege = *S-1-5-32-544
+SeLockMemoryPrivilege = 
+SeSecurityPrivilege = *S-1-5-32-544
+SeDebugPrivilege = *S-1-5-32-544
+SeRelabelPrivilege = 
+SeSystemEnvironmentPrivilege = *S-1-5-32-544
+SeManageVolumePrivilege = *S-1-5-32-544
+SeProfileSingleProcessPrivilege = *S-1-5-32-544
+SeSystemProfilePrivilege = *S-1-5-32-544,*S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420
+SeAssignPrimaryTokenPrivilege = *S-1-5-19,*S-1-5-20
+SeRestorePrivilege = *S-1-5-32-544
+SeShutdownPrivilege = *S-1-5-32-544
+SeTakeOwnershipPrivilege = *S-1-5-32-544
+
+[Profile Description]
+Description=cb-cis-level1-windows10-1511

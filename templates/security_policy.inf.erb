@@ -1,0 +1,34 @@
+[Unicode]
+Unicode=yes
+
+[Version]
+signature="$CHICAGO$"
+Revision=1
+
+[System Log]
+MaximumLogSize = 32768
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[Security Log]
+MaximumLogSize = 196608
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[Application Log]
+MaximumLogSize = 32768
+AuditLogRetentionPeriod = 0
+RestrictGuestAccess = 1
+
+[System Access]
+<% node['security_policy']['access'].each do |setting, value| %>
+<%= value['CIS_Control'] %>
+<% end %>
+
+[Privilege Rights]
+<% node['security_policy']['rights'].each do |setting, value| %>
+<%= value['CIS_Control'] %>
+<% end %>
+
+[Profile Description]
+Description=cb-cis-level1-windows10-1511
