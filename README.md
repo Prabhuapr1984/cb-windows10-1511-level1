@@ -52,7 +52,7 @@ This cookbook is developed based on CIS Level1 security standards for Windows 10
     - section_19 (PowerShell), Note: this section is option configuration as these settings are applicable when the user is logged on.
     - security_policy (It uses native 'secedit.exe' tool to apply .inf based configuration which will create based on attributed=> sec_policy.rb)
 
-## Can use other deployment tool to harden the server to complies with CIS level1?
+## Can use other deployment tools to harden the windows 10 to complies with CIS level1?
 
 ```ruby  
 
