@@ -1,6 +1,6 @@
 require 'win32ole'
 
-module Windows2016Hardening
+module Windows10Hardening
   module Helpers
     def builtin_groups
       # "builtin_groups = [ \"Administrators\", \"Authenticated Users\", \"Guests\", \"LOCAL SERVICE\", \"NETWORK SERVICE\", \"NETWORK\", \"SERVICE\" ]"
@@ -28,4 +28,4 @@ module Windows2016Hardening
   end
 end
 
-Chef::Resource.include Windows2016Hardening::Helpers
+Chef::Resource.include Windows10Hardening::Helpers

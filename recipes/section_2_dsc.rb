@@ -4,7 +4,7 @@
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
 class ::Chef::Resource
-  include ::Windows2016Hardening::Helpers
+  include ::Windows10Hardening::Helpers
 end
 
 # xccdf_org.cisecurity.benchmarks_rule_2.2.1_L1_Ensure_Access_Credential_Manager_as_a_trusted_caller_is_set_to_No_One
