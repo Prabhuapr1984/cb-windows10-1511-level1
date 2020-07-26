@@ -10,7 +10,7 @@ This cookbook is developed based on CIS Level1 security standards for Windows 10
 
 ### Warning ⚠️
 
-    - Do proper testing against your organisation security standards, operational standards before you apply this hardening as this may bring down the application.
+    - Do proper testing against your organisation security standards, operational standards before you apply this hardening as this may lockdown your windows and other applications.
 
 ## Requirements :
 
@@ -20,7 +20,7 @@ This cookbook is developed based on CIS Level1 security standards for Windows 10
 
 ## Optional Requirement :
 
-    - SecurityPolicyDsc => Powershell DSC Module (if you apply "section_1.rb_, section_2.rb (commented)" recipe using DSC, since i'm not using DSC  due to consistent check issue when chef client runs, because the chef client runs every 30 mins which conflicts with DSC)
+    - SecurityPolicyDsc => Powershell DSC Module (if you apply "section_1_dsc.rb, section_2_dsc.rb" recipe using DSC, since i'm not using DSC  due to consistent check issue when chef client runs, because the chef client runs every 30 mins which conflicts with DSC)
 
 ### Supported OS Platforms :
 
