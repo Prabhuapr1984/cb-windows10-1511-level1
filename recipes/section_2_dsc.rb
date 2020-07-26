@@ -1,5 +1,5 @@
 # Cookbook:: cb-cis-level1-windows10-1511
-# Recipe:: section_2
+# Recipe:: section_2_dsc
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
